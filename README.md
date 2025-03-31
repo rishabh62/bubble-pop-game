@@ -2,7 +2,7 @@
 
 100% vibe coded game
 
-play here: https://rgour.tiiny.site/
+play here (only supported on mobile devices): https://rgour.tiiny.site/
 
 ## Gameplay
 
