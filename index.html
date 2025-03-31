@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Bubble Pop Adventure</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div id="start-screen" class="screen">
+            <h1>Bubble Pop Adventure</h1>
+            <p class="tagline">Pop bubbles, collect stars, avoid obstacles!</p>
+
+            <button id="start-button" class="btn">START</button>
+
+            <div class="instructions">
+                <h3>How to Play:</h3>
+                <p>👆 Tap to pop bubbles</p>
+                <p>👈👉 Swipe to dodge obstacles</p>
+            </div>
+
+            <div class="mobile-notice">
+                <p>⚠️ This game is designed for mobile devices only ⚠️</p>
+                <p>For best experience, play on your smartphone or tablet</p>
+            </div>
+
+            <button id="settings-button" class="small-btn">Settings</button>
+        </div>
+
+        <div id="game-screen" class="screen" style="display:none;">
+            <div class="game-stats">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="time">Time: <span id="time">60</span>s</div>
+            </div>
+            <canvas id="game-canvas"></canvas>
+        </div>
+
+        <div id="end-screen" class="screen" style="display:none;">
+            <h1>Game Over!</h1>
+            <div class="final-score">Score: <span id="final-score">0</span></div>
+            <div class="high-score">High Score: <span id="high-score">0</span></div>
+            <button id="restart-button" class="btn">PLAY AGAIN</button>
+            <button id="settings-button-end" class="small-btn">Settings</button>
+        </div>
+
+        <div id="settings-overlay" class="overlay" style="display:none;">
+            <div class="settings-panel">
+                <h2>Settings</h2>
+                <div class="setting-item">
+                    <label for="sensitivity-slider">Swipe Sensitivity:</label>
+                    <input type="range" id="sensitivity-slider" min="0.5" max="2.0" step="0.1" value="1.0">
+                    <span id="sensitivity-value">1.0</span>
+                </div>
+                <button id="settings-close" class="btn">Save & Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
