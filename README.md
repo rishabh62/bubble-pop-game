@@ -1,6 +1,7 @@
 # Bubble Pop Adventure
 
 100% vibe coded game
+play here: https://rgour.tiiny.site/
 
 ## Gameplay
 
